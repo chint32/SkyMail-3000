@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="A1Prj:jar">
+    <output-path>$PROJECT_DIR$/../Desktop/School/Spring 2021/CSC133/Hinton-Cotey-a1</output-path>
+    <root id="archive" name="SkyMail3000.jar">
+      <element id="module-output" name="SkyMail3000" />
+    </root>
+  </artifact>
+</component>
