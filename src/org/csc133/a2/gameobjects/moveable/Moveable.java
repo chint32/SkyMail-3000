@@ -1,6 +1,6 @@
-package org.csc133.a1.gameobjects.moveable;
+package org.csc133.a2.gameobjects.moveable;
 
-import org.csc133.a1.gameobjects.GameObject;
+import org.csc133.a2.gameobjects.GameObject;
 
 public abstract class Moveable extends GameObject {
 

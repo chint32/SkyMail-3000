@@ -1,7 +1,7 @@
-package org.csc133.a1.gameobjects.fixed;
+package org.csc133.a2.gameobjects.fixed;
 
 
-import org.csc133.a1.util.Constants;
+import org.csc133.a2.util.Constants;
 
 import java.util.Arrays;
 

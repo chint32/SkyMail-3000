@@ -1,4 +1,4 @@
-package org.csc133.a1.interfaces;
+package org.csc133.a2.interfaces;
 
 public interface ISteerable {
 
