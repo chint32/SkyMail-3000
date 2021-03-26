@@ -23,7 +23,7 @@ public class AppMain {
     private Form current;
     private Resources theme;
 
-
+// this is another test
     public void init(Object context) {
         // use two network threads instead of one
         updateNetworkThreadCount(2);
