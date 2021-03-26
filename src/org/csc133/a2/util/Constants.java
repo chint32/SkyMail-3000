@@ -1,4 +1,4 @@
-package org.csc133.a1.util;
+package org.csc133.a2.util;
 
 public class Constants {
 

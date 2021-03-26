@@ -1,11 +1,11 @@
-package org.csc133.a1;
+package org.csc133.a2;
 
-import org.csc133.a1.gameobjects.GameObject;
-import org.csc133.a1.gameobjects.fixed.RefuelingBlimp;
-import org.csc133.a1.gameobjects.fixed.Skyscraper;
-import org.csc133.a1.gameobjects.moveable.Bird;
-import org.csc133.a1.gameobjects.moveable.Helicopter;
-import org.csc133.a1.util.Constants;
+import org.csc133.a2.gameobjects.GameObject;
+import org.csc133.a2.gameobjects.fixed.RefuelingBlimp;
+import org.csc133.a2.gameobjects.fixed.Skyscraper;
+import org.csc133.a2.gameobjects.moveable.Bird;
+import org.csc133.a2.gameobjects.moveable.Helicopter;
+import org.csc133.a2.util.Constants;
 import java.util.ArrayList;
 import static java.lang.Math.abs;
 
