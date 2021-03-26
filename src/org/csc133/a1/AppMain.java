@@ -23,7 +23,6 @@ public class AppMain {
     private Form current;
     private Resources theme;
 
-//test for branch 2sjehb
 
     public void init(Object context) {
         // use two network threads instead of one
