@@ -1,22 +1,46 @@
-package org.csc133.a2;
+package org.csc133.a2.controller;
 
+import com.codename1.ui.Container;
 import com.codename1.ui.Form;
-import com.codename1.ui.Label;
 import com.codename1.ui.TextField;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
+import com.codename1.ui.layouts.BorderLayout;
+import com.codename1.ui.layouts.FlowLayout;
+import org.csc133.a2.model.GameWorld;
+import org.csc133.a2.view.GlassCockpit;
+import org.csc133.a2.view.MapView;
 
-public class Game extends Form {
+
+public class Game extends Form implements Runnable{
+
 
     private GameWorld gw;
+    private MapView map;
+    private GlassCockpit hud;
+
 
     public Game() {
 
-        gw = new GameWorld();
+        map = new MapView();
+        hud = new GlassCockpit();
+
+        setTitle("SkyMail-3000");
+        setLayout(new BorderLayout());
+
+        add(BorderLayout.NORTH, hud);
+        add(BorderLayout.CENTER, map);
+
+        gw = new GameWorld(map, hud);
         gw.init();
+
         play();
 
+        show();
     }
+
+
+
 
     private void play() {
 
@@ -28,12 +52,10 @@ public class Game extends Form {
         //keyboard commands via a text
         //field located on the form)
 
-        Label myLabel = new Label("Enter a Command:");
-        this.addComponent(myLabel);
-
         final TextField myTextField = new TextField();
-        this.addComponent(myTextField);
-        this.show();
+        this.add(BorderLayout.SOUTH, myTextField);
+
+
 
         myTextField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -116,5 +138,10 @@ public class Game extends Form {
                 }
             }
         });
+    }
+
+    @Override
+    public void run() {
+
     }
 }
