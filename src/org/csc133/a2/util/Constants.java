@@ -8,8 +8,8 @@ public class Constants {
     public static final int clockStart = 0;
 
     public static final float helicopterSize = 10f;
-    public static final float helicopterMaxDamage = 100f;
-    public static final float helicopterMaxFuel = 50f;
+    public static final float helicopterMaxDamage = 99f;
+    public static final float helicopterMaxFuel = 9999;
     public static final float damageFromCollisionWithHelicopter = 20f;
     public static final float damageFromCollisionWithBird = damageFromCollisionWithHelicopter / 2f;
     public static final float helicopterMaxSpeed = 50f;
